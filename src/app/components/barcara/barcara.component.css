@@ -1,0 +1,36 @@
+.bg_bar {
+    /* The image used */
+    background-image: url(/assets/images/content/bg.png) !important;
+    /* background-color: #3D0B0A; */
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: 100% 100% !important;
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100% !important;
+    padding: 20px !important;
+}
+
+.img_bar {
+    width: 100%;
+}
+
+.img_bar:hover {
+    cursor: pointer;
+}
+
+.title_barcara {
+    text-align: center;
+    color: white;
+}
+
+.title_barcara_2 {
+    text-align: center;
+    color: yellow;
+    padding-bottom: 20px;
+}
+
+.bar_game_area {
+    padding-bottom: 20px;
+}

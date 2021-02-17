@@ -1,0 +1,251 @@
+<div class="content_ container">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+
+        <div ngxSlickItem *ngFor="let slide of imageUrls" class="slide">
+            <img src="{{ slide.img }}" alt="" width="100%">
+        </div>
+
+    </ngx-slick-carousel>
+    <div class="container content_area_set">
+
+        <div class="row" style="color: white;">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 col sport_area">
+                <img src="/assets/images/content/basketball.png" alt="">
+                <div class="area_message">
+                    <div class="title_text">
+                        <ng-container *ngIf="language=='TH'">
+                            บาสเก็ตบอล
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ບານບ້ວງ
+                        </ng-container>
+
+                    </div>
+                    <div class="des_text">
+                        <ng-container *ngIf="language=='TH'">
+                            พร้อมที่จะยิงห่วงหรือยัง ? ฝึกการเลี้ยงลูกการโยนลูกโทษ และการขว้างลูกบาสใน แต่ละเกมส์ของเรา
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ພ້ອມທີ່ຈະຍິງຫ່ວງຫືຼຍັງຝືກການລຽງລູກການໂຍນລູກໂທດກາຮຂວາງລູກໜາກບານໃນເເຕ່ລະເກມຂອງເຮາ
+                        </ng-container>
+
+
+
+
+                    </div>
+                </div>
+                <div class="sport_bottom">
+                    <div class="badge badge-light btn_play">
+                        <ng-container *ngIf="language=='TH'">
+                            เล่น !
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ຫີ້ຼນ !
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 col sport_area">
+                <img src="/assets/images/content/baseball.png" alt="">
+                <div class="area_message">
+                    <div class="title_text">
+                        <ng-container *ngIf="language=='TH'">
+                            เบสบอล
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ເບດບານ
+                        </ng-container>
+                        ເບດບານ
+                    </div>
+                    <div class="des_text">
+                        <ng-container *ngIf="language=='TH'">
+                            เล่นเกมส์เบสบอลที่สนุก และน่าติดตาม! ผลัดกันลงสนามและตีกลับบ้านที่น่าตื่นตา ตื่นใจให้มากที่สุด
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ຫຼີ້ນເກມເບດບອນເເລະໜ້າຕິດຕາມພັດກັນລົງສະໜາມເເລະຕີກັບບ້ານທີ່ໜ້າຕື່ນຕາຕື່ນໃຈໃຫ້ມາກທີ່ສຸດ
+                        </ng-container>
+
+                    </div>
+                </div>
+                <div class="sport_bottom">
+                    <div class="badge badge-light btn_play">
+                        <ng-container *ngIf="language=='TH'">
+                            เล่น !
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ຫີ້ຼນ !
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 col sport_area">
+                <img src="/assets/images/content/football.png" alt="">
+                <div class="area_message">
+                    <div class="title_text">
+                        <ng-container *ngIf="language=='TH'">
+                            ฟุตบอล
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ບານເຕະ
+                        </ng-container>
+
+                    </div>
+                    <div class="des_text">
+                        <ng-container *ngIf="language=='TH'">
+                            เล่นฟุตบอลชิงแชมป์ที่ดีที่สุด และยิงเกมส์จุดโทษและนำทีม ของคุณไปสู่ชัยชนะในสนาม
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ຫີ້ຼໜາກບານຊິ່ງເເຊມທີ່ດີທີ່ສຸດເເລະຍິງເກມຈຸດໂທດເເລະນຳທິມຂອງເຈ້າໄປສູ່ໄຊສະນະໃນສະໜາມ
+                        </ng-container>
+
+                    </div>
+                </div>
+                <div class="sport_bottom">
+                    <div class="badge badge-light btn_play">
+                        <ng-container *ngIf="language=='TH'">
+                            เล่น !
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ຫີ້ຼນ !
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 col sport_area">
+                <img src="/assets/images/content/tennis.png" alt="">
+                <div class="area_message">
+                    <div class="title_text">
+                        <ng-container *ngIf="language=='TH'">
+                            เทนนิส
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ເທນນິດ
+                        </ng-container>
+
+                    </div>
+                    <div class="des_text">
+                        <ng-container *ngIf="language=='TH'">
+                            เล่นเกมส์เทนนิสที่สนุก และน่าติดตาม! ผลัดกันลงสนามและตีกลับบ้านที่น่าตื่นตา ตื่นใจให้มากที่สุด
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ຫິ້ຼເກມໜາມເທນິທີ່ສະນຸກເເລະໜ້າຕິດຕາມພັດກັນລົງສະໜາມເເລະຕີບ້ານທີ່ໜ້າຕື່ນຕາຕື່ນໃຈໃຫ້ມາກທີ່ສຸດ
+                        </ng-container>
+
+                    </div>
+                </div>
+                <div class="sport_bottom">
+
+                    <div class="badge badge-light btn_play">
+                        <ng-container *ngIf="language=='TH'">
+                            เล่น !
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ຫີ້ຼນ !
+                        </ng-container>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text_home_title">
+        <ng-container *ngIf="language=='TH'">
+            ผลิตภัณฑ์และคุณสมบัติ
+        </ng-container>
+        <ng-container *ngIf="language=='LA'">
+            ຜະລິດຕະພັນແລະຄຸນລັກສະນະຕ່າງໆ
+        </ng-container>
+    </div>
+    <div class="row" style="color: white;">
+        <div class="col-md-6 col-sm-6 col-12 col sport_area" style="position: relative;">
+            <ng-container *ngIf="language=='TH'">
+                <div class="text_product_title">
+                    กีฬา
+                </div>
+                <div class="text_product_des">
+                    การแข่งขันสดมากกว่าหบายพันรายการ และเสนอหนึ่งในอัตราต่อรองที่ดีที่สุดในตลาด
+                </div>
+            </ng-container>
+            <ng-container *ngIf="language=='LA'">
+                <div class="text_product_title">
+                    ກິລາ
+                </div>
+                <div class="text_product_des">
+                    ການເເຂ່ງຂັນສົດມາກກວາຫາຼຍພັນຮາຍການເເລະສະເໜິໜື່ງໃນອັດຕໍ່ຮອງທີ່ດີທີ່ໃນຕະລາດ
+                </div>
+            </ng-container>
+
+
+            <img src="/assets/images/content/sport.png?v=1.1" alt="">
+        </div>
+        <div class="col-md-6 col-sm-6 col-12 col sport_area">
+            <ng-container *ngIf="language=='TH'">
+                <div class="text_product_title">
+                    การเล่นเกมส์
+                </div>
+                <div class="text_product_des">
+                    เกมส์สล็อตที่น่าตื่นเต้นให้เลือกมากมาย
+                </div>
+            </ng-container>
+            <ng-container *ngIf="language=='LA'">
+                <div class="text_product_title">
+                    ການຫຼີ້ນເກມ
+                </div>
+                <div class="text_product_des">
+                    ການເເຂ່ງຂັນສົດມາກກວາຫາຼຍພັນຮາຍການເເລະສະເໜິໜື່ງໃນອັດຕໍ່ຮອງທີ່ດີທີ່ໃນຕະລາດ
+                </div>
+
+            </ng-container>
+
+
+            <img src="/assets/images/content/game.png?v=1.1" alt="">
+        </div>
+        <div class="col-md-6 col-sm-6 col-12 col sport_area">
+            <ng-container *ngIf="language=='TH'">
+                <div class="text_product_title">
+                    คาสิโนสด
+                </div>
+                <div class="text_product_des">
+                    ความตื่นเต้นและความเย้ายวนใจของ ประสบการณ์คาสิโนที่แท้จริง
+                </div>
+            </ng-container>
+            <ng-container *ngIf="language=='LA'">
+                <div class="text_product_title">
+                    ຄາສິໂນທີ່ມີຊີວິດ
+                </div>
+                <div class="text_product_des">
+                    ຄວາມຕື່ນເຕັ່ນເເລະຄວາມເຍົ້າຍວນໃຈຂອງປະສບການຄາສີໂນທີ່ເເທ້ຈີ່ງ
+                </div>
+
+            </ng-container>
+
+
+            <img src="/assets/images/content/casino.png?v=1.1" alt="">
+        </div>
+        <div class="col-md-6 col-sm-6 col-12 col sport_area">
+            <ng-container *ngIf="language=='TH'">
+                <div class="text_product_title">
+                    ไก่ต่อสู้
+                </div>
+                <div class="text_product_des">
+                    การถ่ายทอดสดการแข่งขันไก่ชนแบบ ไม่หยุดยั้งจากเวทีในเวียดนาม
+                </div>
+            </ng-container>
+            <ng-container *ngIf="language=='LA'">
+                <div class="text_product_title">
+                    ສູ້ໄກ່
+                </div>
+                <div class="text_product_des">
+                    ການຖ່າຍທອດສົດການເເຂ່ງຂັນໄກ່ຕີກັນເເບບບ່ຍຸດຍັ້ງຈາກເວທີວຽດນາມ
+                </div>
+
+            </ng-container>
+
+
+            <img src="/assets/images/content/cockfight.png?v=1.1" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- <div _ngcontent-gyx-c3="" attr="https://lin.ee/3WytmJVY" class="qr-popup"><i _ngcontent-gyx-c3="" aria-hidden="true" class="fa fa-window-close fa-6 close-qr"></i></div> -->

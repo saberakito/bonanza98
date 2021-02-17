@@ -1,0 +1,301 @@
+<app-navbar *ngIf="showHeader">
+
+</app-navbar>
+<!-- <div *ngIf="showHeader"  class="{{class_checkShow}}" >
+    <div  class="container">
+        <div  class="header-area">
+            <div  class="logo_area"><img  src="assets/images/logo/logo.png?v=1.1"></div>
+             <div _ngcontent-jev-c0="" class="social_area">
+                <div _ngcontent-jev-c0="" class="line_icon">
+                    <img class="line_icon_" _ngcontent-jev-c0="" alt="" src="assets/images/content/line.png?v=1.1">
+                    <img  class="hvr-push hover" routerLink="/page/register" _ngcontent-jev-c0="" alt="" src="assets/images/content/register.png">
+                </div>
+            </div>
+        </div>
+        <div  class="area_login"></div>
+    </div>
+
+
+</div> -->
+
+
+<div class="content page">
+    <router-outlet></router-outlet>
+</div>
+
+
+
+
+
+
+<div _ngcontent-eff-c0="" class="bg-footer col-xs-12" style="padding-left: 0px;
+padding-right: 0px;    padding-top: 12px;">
+
+    <ng-container *ngIf='user==null||user==""'>
+        <div class="col-xs-6" style="padding-left: 0;
+    padding-right: 0;">
+            <a routerLinkActive="router-link-active" (click)="openDiv()">
+                <div class="area-btn-footer">
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+                    <div>
+                        สมัครสมาชิก
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6" style="padding-left: 0;
+    padding-right: 0;">
+            <a (click)="openDiv2()">
+                <div class="area-btn-footer">
+                    <svg width="1.5em" height="1.5em" fill="currentColor" viewBox="0 -10 490.66667 490" xmlns="http://www.w3.org/2000/svg"><path d="m325.332031 251h-309.332031c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h309.332031c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m240 336.332031c-4.097656 0-8.191406-1.554687-11.308594-4.691406-6.25-6.25-6.25-16.382813 0-22.636719l74.027344-74.023437-74.027344-74.027344c-6.25-6.25-6.25-16.386719 0-22.636719 6.253906-6.25 16.386719-6.25 22.636719 0l85.332031 85.335938c6.25 6.25 6.25 16.382812 0 22.632812l-85.332031 85.332032c-3.136719 3.160156-7.230469 4.714843-11.328125 4.714843zm0 0"/><path d="m256 469.667969c-97.089844 0-182.804688-58.410157-218.410156-148.824219-3.242188-8.191406.808594-17.492188 9.023437-20.734375 8.191407-3.199219 17.515625.789063 20.757813 9.046875 30.742187 78.058594 104.789062 128.511719 188.628906 128.511719 111.742188 0 202.667969-90.925781 202.667969-202.667969s-90.925781-202.667969-202.667969-202.667969c-83.839844 0-157.886719 50.453125-188.628906 128.511719-3.265625 8.257812-12.566406 12.246094-20.757813 9.046875-8.214843-3.242187-12.265625-12.542969-9.023437-20.734375 35.605468-90.414062 121.320312-148.824219 218.410156-148.824219 129.386719 0 234.667969 105.28125 234.667969 234.667969s-105.28125 234.667969-234.667969 234.667969zm0 0"/></svg>
+                    <div>
+                        เข้าสู่ระบบ
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </ng-container>
+
+
+    <ng-container *ngIf='user!=null&&user!=""'>
+        <div class="col-xs-6" style="padding-left: 0;
+        padding-right: 0;">
+            <a routerLinkActive="router-link-active" (click)="openDeposit()">
+                <div class="area-btn-footer">
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  </svg>
+                    <div>
+                        ฝาก
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-xs-6" style="padding-left: 0;
+        padding-right: 0;">
+            <a (click)="openWithDraw()">
+                <div class="area-btn-footer">
+                    <svg width="1.5em" height="1.5em" fill="currentColor" viewBox="0 -10 490.66667 490" xmlns="http://www.w3.org/2000/svg"><path d="m325.332031 251h-309.332031c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h309.332031c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m240 336.332031c-4.097656 0-8.191406-1.554687-11.308594-4.691406-6.25-6.25-6.25-16.382813 0-22.636719l74.027344-74.023437-74.027344-74.027344c-6.25-6.25-6.25-16.386719 0-22.636719 6.253906-6.25 16.386719-6.25 22.636719 0l85.332031 85.335938c6.25 6.25 6.25 16.382812 0 22.632812l-85.332031 85.332032c-3.136719 3.160156-7.230469 4.714843-11.328125 4.714843zm0 0"/><path d="m256 469.667969c-97.089844 0-182.804688-58.410157-218.410156-148.824219-3.242188-8.191406.808594-17.492188 9.023437-20.734375 8.191407-3.199219 17.515625.789063 20.757813 9.046875 30.742187 78.058594 104.789062 128.511719 188.628906 128.511719 111.742188 0 202.667969-90.925781 202.667969-202.667969s-90.925781-202.667969-202.667969-202.667969c-83.839844 0-157.886719 50.453125-188.628906 128.511719-3.265625 8.257812-12.566406 12.246094-20.757813 9.046875-8.214843-3.242187-12.265625-12.542969-9.023437-20.734375 35.605468-90.414062 121.320312-148.824219 218.410156-148.824219 129.386719 0 234.667969 105.28125 234.667969 234.667969s-105.28125 234.667969-234.667969 234.667969zm0 0"/></svg>
+                    <div>
+                        ถอน
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </ng-container>
+
+
+</div>
+
+
+<!-- div login for mobile -->
+<div class="div_regis_m animate__animated animate__slideInUp">
+    <div class="close_div_login_m fas fa-times -close" onClick="closeDiv()">
+
+    </div>
+    <div class="title_login_m">
+        สมัครสมาชิก
+    </div>
+    <ng-container *ngIf="tel==null||tel==''">
+
+        <div class="icon_title">
+            <div>
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </div>
+            <span style="font-size: 16px !important;">เบอร์โทรศัพท์มือถือ</span>
+        </div>
+        <div class="content_regis_m">
+            <input type="text" class="form-control input_regis_m" placeholder="กรุณากรอกเบอร์โทรศัพท์">
+            <div class="badge badge-danger btn_regis_m" (click)="confirmRegis()">ยืนยัน</div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="tel!=null&&tel!=''&&otp==null">
+        <div class="icon_title">
+            <div>
+                <i class="fa fa-key" aria-hidden="true"></i>
+            </div>
+            <span style="font-size: 16px !important;">OTP</span>
+        </div>
+        <div class="content_regis_m">
+            <input type="text" name="opt_text" class="form-control input_regis_m" placeholder="OTP">
+            <label class="text_warning">หากยังไม่ได้รับรหัส OPT โปรดติดต่อพนักงาน</label>
+            <div class="badge badge-danger btn_regis_m" (click)="confirmOTP()">ยืนยัน</div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="otp!=null&&password==null">
+        <div class="icon_title">
+            <div>
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </div>
+            <span style="font-size: 16px !important;">รหัสผ่าน</span>
+        </div>
+        <div class="content_regis_m">
+            <input type="text" class="form-control input_regis_m" placeholder="รหัสผ่าน">
+
+        </div>
+        <div class="icon_title">
+            <span style="font-size: 16px !important;">รหัสผ่านอีกครั้ง</span>
+        </div>
+        <div class="content_regis_m">
+            <input type="text" class="form-control input_regis_m" placeholder="รหัสผ่านอีกครั้ง">
+            <div class="badge badge-danger btn_regis_m" (click)="confirmPassword()">ยืนยัน</div>
+        </div>
+
+    </ng-container>
+    <ng-container *ngIf="password!=null">
+        <div class="icon_title">
+            <div>
+                <i class="fa fa-money" aria-hidden="true"></i>
+            </div>
+            <span style="font-size: 16px !important;">เลือกธนาคาร</span>
+        </div>
+        <div class="content_regis_m">
+            <select name="" class="form-control input_regis_m" id="">
+                <option value="kbank">ธนาคารกสิกร</option>
+                <option value="scb">ธนาคารไทยพาณิชย์</option>
+                <option value="bbl">ธนาคารกรุงเทพ</option>
+                <option value="kbt">ธนาคารกรุงไทย</option>
+            </select>
+        </div>
+        <div class="icon_title">
+            <span style="font-size: 16px !important;">หมายเลขบัญชีธนาคาร</span>
+        </div>
+        <div class="content_regis_m">
+            <input type="text" class="form-control input_regis_m" placeholder="หมายเลขบัญชีธนาคาร">
+        </div>
+        <div class="icon_title">
+            <span style="font-size: 16px !important;">ชื่อ - สกุล</span>
+        </div>
+        <div class="content_regis_m">
+            <input type="text" class="form-control input_regis_m" placeholder="ชื่อ - สกุล">
+            <div class="badge badge-danger btn_regis_m" (click)="confirmBank()">ยืนยัน</div>
+        </div>
+
+    </ng-container>
+
+
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" *ngIf="tel==null; else templateName2" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1" *ngIf="tel==null||otp!=null; else templateName3" class=""></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2" *ngIf="otp==null||password!=null; else templateName4" class=""></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3" *ngIf="password==null; else templateName5" class=""></li>
+        <ng-template #templateName2>
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
+        </ng-template>
+        <ng-template #templateName3>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+        </ng-template>
+        <ng-template #templateName4>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2" class="active"></li>
+        </ng-template>
+        <ng-template #templateName5>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3" class="active"></li>
+        </ng-template>
+    </ol>
+</div>
+<!-- div login for mobile -->
+
+
+<!-- div login for mobile -->
+<div class="div_login2_m animate__animated animate__slideInUp">
+    <div class="close_div_login_m fas fa-times -close" onClick="closeDiv2()">
+
+    </div>
+    <div class="title_login_m">
+        เข้าสู่ระบบ
+    </div>
+    <div class="icon_title">
+        <span style="font-size: 16px !important;">เบอร์โทรศัพท์มือถือ</span>
+    </div>
+    <div class="content_regis_m">
+        <input type="text" class="form-control input_regis_m" placeholder="เบอร์โทรศัพท์มือถือ">
+
+    </div>
+    <div class="icon_title">
+        <span style="font-size: 16px !important;">รหัสผ่าน</span>
+    </div>
+    <div class="content_regis_m">
+        <input type="password" class="form-control input_regis_m" placeholder="รหัสผ่าน">
+        <div class="badge badge-danger btn_regis_m" (click)="login_fnc()">Login</div>
+    </div>
+
+</div>
+<!-- div login for mobile -->
+
+
+<!-- div deposit for mobile -->
+<div class="div_deposit_m animate__animated animate__slideInUp">
+    <div class="close_div_login_m fas fa-times -close" onClick="closeDeposit()">
+
+    </div>
+    <div class="title_login_m">
+        ฝากเงิน
+    </div>
+    <div class="icon_title">
+        <span style="font-size: 16px !important;">จำนวนที่ต้องการฝาก</span>
+    </div>
+    <div class="content_regis_m">
+        <input type="text" class="form-control input_regis_m" placeholder="เงินฝากขั้นต่ำ 100">
+        <div class="badge badge-danger btn_regis_m" (click)="doposit_fnc()">ยืนยัน</div>
+    </div>
+    <div class="icon_title">
+        <div style="font-size: 16px !important;">เลือกรับโปรโมชั่นก่อนแจ้งฝาก</div>
+        <div style="font-size: 16px !important;">กรุณากดรับสิทธิ์ ด้านล่างค่ะ</div>
+    </div>
+</div>
+<!-- div deposit for mobile -->
+
+<!-- div withdraw for mobile -->
+<div class="div_withdraw_m animate__animated animate__slideInUp">
+    <div class="close_div_login_m fas fa-times -close" onClick="closeWithdraw()">
+
+    </div>
+    <div class="title_login_m">
+        ถอนเงิน
+    </div>
+    <div class="icon_title">
+        <span style="font-size: 16px !important;padding-bottom: 20px;">
+            <img style="width: 50px;" src="/assets/images/icon/kbank.png" alt="">
+            <div>
+                test test
+            </div>
+            <div>
+                999 999 999
+            </div>
+        </span>
+    </div>
+    <div class="icon_title">
+        <span style="font-size: 16px !important;">จำนวนที่ต้องการถอน</span>
+    </div>
+    <div class="content_regis_m">
+        <input type="text" class="form-control input_regis_m" placeholder="เงินถอนขั้นต่ำ 300">
+        <div class="badge badge-danger btn_regis_m" (click)="withdraw_fnc()">ยืนยัน</div>
+        <div class="badge badge-warning btn_regis_m" (click)="withdraw_cancel_fnc()">ยกเลิก</div>
+    </div>
+
+</div>
+<!-- div withdraw for mobile -->
+
+
+
+<!--- QR CODE DIV-->
+<div class="qr_div" (click)="openQr();">
+    <div class="qr_icon">
+        <i class="fa fa-headphones" aria-hidden="true"></i>
+    </div>
+    <!-- <a href="http://line.me/ti/p/~@BNZ98" style="color: inherit;">
+       
+    </a> -->
+    <div class="qr_text">
+        @BNZ98
+    </div>
+</div>
+
+
+<app-footer *ngIf="showHeader"></app-footer>

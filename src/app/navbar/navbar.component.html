@@ -1,0 +1,241 @@
+<!-- <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header" style="background: #111D4D; color:white;border:1px solid #F7C30F;">
+        <h4 class="modal-title" id="modal-basic-title">LOGIN</h4>
+        <button type="button" style="background-color: white;" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" style="background: #111D4D; color:white;border:1px solid #F7C30F;">
+        <form _ngcontent-jev-c0="" action="https://mtvip.club/api/loginUfabet.php" autocomplete="off" id="form2" method="post" name="form2" novalidate="" class="ng-untouched ng-pristine ng-valid">
+            <div class="input_text_area">
+
+                <input _ngcontent-jev-c0="" id="ac" name="ac" type="hidden" value="loginUfabet">
+                <ng-container *ngIf="language=='TH'">
+                    <input placeholder="ชื่อผู้ใช้" class="form-control input_login" type="text" name="username" id="username">
+                    <input placeholder="รหัสผ่าน" class="form-control input_login" type="password" name="password" id="password">
+                </ng-container>
+                <ng-container *ngIf="language=='LA'">
+                    <input placeholder="ຊື່ຜູ້ໃຊ້" class="form-control input_login" type="text" name="username" id="username">
+                    <input placeholder="ລະຫັດຜ່ານ" class="form-control input_login" type="password" name="password" id="password">
+                </ng-container>
+
+            </div>
+
+            <div class="badge badge-light btn_login" onclick="doPostBackBetufa('btnSignIn','')">
+                <ng-container *ngIf="language=='TH'">
+                    เข้าสู่ระบบ
+                </ng-container>
+            </div>
+        </form>
+    </div>
+</ng-template> -->
+
+
+
+
+<div class="nav_area">
+    <div class="container" style="background:unset">
+        <div class="nav_top">
+            <div class="logo_nav">
+                <img [routerLink]="['/home']" routerLinkActive="router-link-active" src="assets/images/logo/logo.png?v=1.4" alt="">
+                <div class="bnt_login_area">
+                    <div class="badge badge-info btn_login_m" (click)="openDiv2()" routerLinkActive="router-link-active">เข้าสู่ระบบ</div>
+                </div>
+            </div>
+
+
+
+            <div class="login_area">
+                <form _ngcontent-jev-c0="" action="https://mtvip.club/api/loginUfabet.php" autocomplete="off" id="form2" method="post" name="form2" novalidate="" class="ng-untouched ng-pristine ng-valid">
+                    <div class="input_text_area">
+                        <div class="line_tel_area">
+                            <img src="/assets/images/icon/line-icon.png" alt="">
+                            <label style="color: #01E936;padding-left: 5px;">@bonanza98</label>
+                            <label style="color: white;padding-left: 5px;">093-480-0058 ,</label>
+                            <label style="color: white;padding-left: 5px;">096-031-9390</label>
+                        </div>
+
+
+                        <input _ngcontent-jev-c0="" id="ac" name="ac" type="hidden" value="loginUfabet">
+                        <ng-container *ngIf="language=='TH'">
+                            <input placeholder="ชื่อผู้ใช้" class="form-control input_login" type="text" name="username" id="username">
+                            <input placeholder="รหัสผ่าน" class="form-control input_login" type="password" name="password" id="password">
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            <input placeholder="ຊື່ຜູ້ໃຊ້" class="form-control input_login" type="text" name="username" id="username">
+                            <input placeholder="ລະຫັດຜ່ານ" class="form-control input_login" type="password" name="password" id="password">
+                        </ng-container>
+
+                    </div>
+
+                    <div class="badge badge-light btn_login" onclick="doPostBackBetufa('btnSignIn','')">
+                        <ng-container *ngIf="language=='TH'">
+                            เข้าสู่ระบบ
+                        </ng-container>
+                        <ng-container *ngIf="language=='LA'">
+                            ເຂົ້າ​ສູ່​ລະ​ບົບ
+                        </ng-container>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+
+        <div class="content_ container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+
+                        <div ngxSlickItem *ngFor="let slide of imageUrls" class="slide">
+                            <img src="{{ slide.img }}" alt="" width="100%">
+                        </div>
+                    </ngx-slick-carousel>
+                </div>
+                <div class="col-lg-4 col-12 icon_sport">
+                    <ng-container *ngIf='tel==""||tel==null'>
+                        <div class="register_area">
+                            <div class="text_title_regis">สมัครสมาชิก</div>
+                            <div class="image_regis">
+                                <img src="/assets/images/content/register.png" alt="">
+                                <div class="text_phoe_regis"> เบอร์โทรศัพท์มือถือ </div>
+                                <input type="text" class="form-control input_regis" placeholder="กรุณากรอกเบอร์โทร">
+                                <input type="text" class="form-control input_regis" placeholder="กรุณากรอกรหัส OTP">
+                                <div (click)="confirm()" class="badge badge-pill badge-info btn_register">ยืนยัน</div>
+                            </div>
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf='tel!=""&&tel!=null'>
+                        <div class="row">
+                            <div class="col-12">
+                                <img [routerLink]="['/home/page/deposit']" routerLinkActive="router-link-active" class="hvr-push" style="width: 100%;height: calc( 100% - 10px );" src="/assets/images/content/DEPOSIT.png" alt="">
+                            </div>
+                            <div class="col-12">
+                                <img [routerLink]="['/home/page/withdraw']" routerLinkActive="router-link-active" class="hvr-push" style="width: 100%;height: calc( 100% - 10px );" src="/assets/images/content/WITHDRAW.png" alt="">
+                            </div>
+                            <div class="col-12">
+                                <img class="hvr-push" style="width: 100%;height: calc( 100% - 10px );" src="/assets/images/content/playnow.png" alt="">
+                            </div>
+                        </div>
+                    </ng-container>
+
+
+                </div>
+            </div>
+
+
+            <div class="container content_area_set icon_sport">
+
+                <div class="row" style="color: white;">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 col sport_area">
+                        <img src="/assets/images/content/sport.png" alt="">
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 col sport_area">
+                        <img src="/assets/images/content/LIVE-casino.png" alt="">
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 col sport_area">
+                        <img src="/assets/images/content/SLOT.png" alt="">
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 col sport_area">
+                        <img src="/assets/images/content/LOTTO.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <ng-container *ngIf="check_url1!='home'&&check_url1!=null&&check_url1!=''">
+            <app-menu></app-menu>
+        </ng-container>
+
+
+        <!-- <div class="topnav" id="myTopnav">
+
+            <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+                <ng-container *ngIf="language=='TH'">
+                    <div class="link_nav cal_{{l+2}}" *ngIf="i==0">
+                        <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class=" links active ">หน้าแรก</a>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="language=='LA'">
+                    <div class="link_nav cal_{{l+2}}" *ngIf="i==0">
+                        <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class=" links active ">ໜ້າເເຮກ</a>
+                    </div>
+                </ng-container>
+
+
+                <div class="link_nav cal_{{l+2}}">
+                    <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/page/{{menu.menu_route}}" class=" links active ">{{menu.menu_name}}</a>
+                </div>
+
+                <ng-container *ngIf="language=='TH'">
+                    <div class="link_nav cal_{{l+2}}" *ngIf="i==2">
+                        <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/promotion" class=" links active ">โปรโมชั่น</a>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="language=='LA'">
+                    <div class="link_nav cal_{{l+2}}" *ngIf="i==2">
+                        <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/promotion" class=" links active ">ໂປຣໂມຊັ່ນ</a>
+                    </div>
+                </ng-container>
+
+            </ng-container>
+            <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> -->
+    </div>
+</div>
+<!-- <div class="topnav_mobile" id="myTopnav">
+    <nav class="navbar navbar-expand-lg ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="icon_menu_mobile">
+            <span class="navbar-toggler-icon">   
+            </span>
+        </button>
+        <div class="logo_nav_m">
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="text-align: left;">
+                <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+                    <ng-container *ngIf="language=='TH'">
+                        <li class="nav-item  nav-menu-tab" *ngIf="i==0">
+                            <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home">หน้าหลัก</a>
+                        </li>
+                    </ng-container>
+                    <ng-container *ngIf="language=='LA'">
+                        <li class="nav-item  nav-menu-tab" *ngIf="i==0">
+                            <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home">ໜ້າເເຮກ</a>
+                        </li>
+                    </ng-container>
+
+                    <li class="nav-item  nav-menu-tab">
+                        <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/page/{{menu.menu_route}}">{{menu.menu_name}}</a>
+                    </li>
+                    <ng-container *ngIf="language=='TH'">
+                        <li class="nav-item  nav-menu-tab" *ngIf="i==2">
+                            <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/promotion">โปรโมชั่น</a>
+                        </li>
+                    </ng-container>
+                    <ng-container *ngIf="language=='LA'">
+                        <li class="nav-item  nav-menu-tab" *ngIf="i==2">
+                            <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/promotion">ໂປຣໂມຊັ່ນ</a>
+                        </li>
+                    </ng-container>
+
+
+                </ng-container>
+            </ul>
+        </div>
+    </nav>
+</div> -->

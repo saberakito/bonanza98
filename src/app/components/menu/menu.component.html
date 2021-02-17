@@ -1,0 +1,142 @@
+<div class="nav_area">
+    <div class="container" style="background:unset">
+        <div class="topnav" id="myTopnav">
+
+            <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+                <ng-container *ngIf="language=='TH'">
+                    <div class="link_nav cal_4" *ngIf="i==0">
+                        <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" class=" links active ">หน้าแรก</a>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="language=='TH'">
+                    <div class="link_nav cal_4" *ngIf="i==0">
+                        <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/home/promotion" class=" links active ">โปรโมชั่น</a>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="language=='TH'">
+                    <div class="link_nav cal_4" *ngIf="i==0">
+                        <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/home/barcara" class=" links active ">แจกสูตรบาคาร่า</a>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="language=='TH'">
+                    <div class="link_nav cal_4" *ngIf="i==0">
+                        <a [routerLinkActive]="['active-menu']" routerLink="/affm" class=" links active ">ลิ้งค์รับทรัพย์</a>
+                    </div>
+                </ng-container>
+                <!-- <div class="link_nav cal_{{l+3}}">
+                    <a [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="['active-menu']" routerLink="/home/page/{{menu.menu_route}}" class=" links active ">{{menu.menu_name}}</a>
+                </div> -->
+            </ng-container>
+            <a [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div _ngcontent-eff-c0="" class="bg-footer col-xs-12 menu_m" style="">
+    <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+        <div [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home" *ngIf="i==0" _ngcontent-eff-c0="" class="col-xs-3" style="padding-left: 0;
+        padding-right: 0;">
+            <div class="area-btn-footer" style="text-align: center; ">
+                <img style="width: 40px;" src="/assets/images/logo/logo.png?v=1.4" alt="">
+                <div style="color:white;">
+                    หน้าหลัก
+                </div>
+            </div>
+        </div>
+        <div [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home/promotion" *ngIf="i==0" _ngcontent-eff-c0="" class="col-xs-3" style="padding-left: 0;
+        padding-right: 0;">
+            <div class="area-btn-footer" style="text-align: center; ">
+                <i style="color: white;" class="fa fa-gift" aria-hidden="true"></i>
+                <div style="color:white;">
+                    โปรโมชั่น
+                </div>
+            </div>
+        </div>
+        <div [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home/barcara" *ngIf="i==0" _ngcontent-eff-c0="" class="col-xs-3" style="padding-left: 0;
+        padding-right: 0;">
+            <div class="area-btn-footer" style="text-align: center; ">
+                <i style="color: white;" class="fa fa-gift" aria-hidden="true"></i>
+                <div style="color:white;">
+                    แจกสูตรบาคาร่า
+                </div>
+            </div>
+        </div>
+        <div [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/affm" *ngIf="i==0" _ngcontent-eff-c0="" class="col-xs-3" style="padding-left: 0;
+        padding-right: 0;">
+            <div class="area-btn-footer" style="text-align: center; ">
+                <i style="color: white;" class="fa fa-link" aria-hidden="true"></i>
+                <div style="color:white;">
+                    ลิ้งค์รับทรัพย์
+                </div>
+            </div>
+        </div>
+        <!-- <div [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home/page/deposit" *ngIf="i==0" _ngcontent-eff-c0="" class="col-xs-4" style="padding-left: 0;
+        padding-right: 0;">
+            <div class="area-btn-footer" style="text-align: center;">
+                <i style="color: white;" class="fa fa-money" aria-hidden="true"></i>
+                <div style="color:white;">
+                    ฝาก
+                </div>
+            </div>
+        </div>
+        <div [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home/page/withdraw" *ngIf="i==0" _ngcontent-eff-c0="" class="col-xs-4" style="padding-left: 0;
+        padding-right: 0;">
+            <div class="area-btn-footer" style="text-align: center;">
+                <i style="color: white;" class="fa fa-money" aria-hidden="true"></i>
+                <div style="color:white;">
+                    ถอน
+                </div>
+            </div>
+        </div>
+        <div [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home/page/contact" *ngIf="i==0" _ngcontent-eff-c0="" class="col-xs-4" style="padding-left: 0;
+        padding-right: 0;">
+            <div class="area-btn-footer" style="text-align: center; ">
+                <i style="color: white;" class="fa fa-credit-card" aria-hidden="true"></i>
+                <div style="color:white;">
+                    ติดต่อเรา
+                </div>
+            </div>
+        </div> -->
+    </ng-container>
+
+
+</div>
+<!-- 
+<div class="topnav_mobile" id="myTopnav">
+    <nav class="navbar navbar-expand-lg ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="icon_menu_mobile">
+            <span class="navbar-toggler-icon">   
+            </span>
+        </button>
+        <div class="logo_nav_m">
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="text-align: left;">
+                <ng-container *ngFor="let menu of menus; index as i; first as isFirst;let l = count">
+                    <ng-container *ngIf="language=='TH'">
+                        <li class="nav-item  nav-menu-tab" *ngIf="i==0">
+                            <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/home">หน้าหลัก</a>
+                        </li>
+                    </ng-container>
+                    <ng-container *ngIf="language=='TH'">
+                        <li class="nav-item  nav-menu-tab" *ngIf="i==2">
+                            <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/promotion">โปรโมชั่น</a>
+                        </li>
+                    </ng-container>
+
+                    <li class="nav-item  nav-menu-tab">
+                        <a style="color: white;" [routerLinkActive]="['active-menu']" [routerLinkActiveOptions]="{exact:true}" routerLink="/page/{{menu.menu_route}}">{{menu.menu_name}}</a>
+                    </li>
+
+
+
+
+                </ng-container>
+            </ul>
+        </div>
+    </nav>
+</div> -->
